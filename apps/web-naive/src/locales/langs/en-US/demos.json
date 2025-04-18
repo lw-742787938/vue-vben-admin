@@ -1,0 +1,49 @@
+{
+  "title": "Demos",
+  "naive": "Naive UI",
+  "table": "Table",
+  "form": "Form",
+  "vben": {
+    "title": "Project",
+    "about": "About",
+    "document": "Document",
+    "antdv": "Ant Design Vue Version",
+    "naive-ui": "Naive UI Version",
+    "element-plus": "Element Plus Version"
+  },
+  "merchant": {
+    "index": "Merchant",
+    "customer": "Customer",
+    "customer-add": "Customer Add",
+    "customer-edit": "Customer Edit",
+    "supplier": "Supplier",
+    "supplier-add": "Supplier Add",
+    "supplier-edit": "Supplier Edit"
+  },
+  "business": {
+    "index": "Business",
+    "todo-list": "Todo List",
+    "done-list": "Done List",
+    "approval-list": "Approval List",
+    "approval-set": "Approval Set"
+  },
+  "finance": {
+    "index": "Finance",
+    "project": "Project Accounting",
+    "payment": "Payment"
+  },
+  "project": {
+    "index": "Project",
+    "add-list": "Project Manage",
+    "add": "Project Add",
+    "edit": "Project Edit",
+    "list": "Project List",
+    "warn-list": "Project Warning"
+  },
+  "system": {
+    "index": "System",
+    "department": "Department Manage",
+    "user": "User Manage",
+    "roles": "Roles Manage"
+  }
+}

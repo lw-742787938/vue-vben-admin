@@ -1,0 +1,29 @@
+{
+  "index": "财务管理",
+  "project": {
+    "index": "项目账务",
+    "info": "账务详情"
+  },
+  "sale": {
+    "index": "收入管理",
+    "add": "新增收入",
+    "edit": "修改收入",
+    "info": "收入详情"
+  },
+  "payment": {
+    "index": "付款管理",
+    "add": "新增付款",
+    "edit": "修改付款",
+    "info": "付款详情",
+    "apply": "付款审核",
+    "selectBuy": "选择成本"
+  },
+  "invoice": {
+    "index": "发票管理",
+    "add": "新增发票",
+    "edit": "修改发票",
+    "info": "发票详情",
+    "selectSale": "选择收入项",
+    "selectBuy": "选择付款单"
+  }
+}

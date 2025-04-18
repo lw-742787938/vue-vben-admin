@@ -1,0 +1,34 @@
+{
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "codeLogin": "Code Login",
+    "qrcodeLogin": "Qr Code Login",
+    "forgetPassword": "Forget Password"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "analytics": "Analytics",
+    "workspace": "Workspace"
+  },
+  "form": {
+    "submit": "Submit",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "previous": "Previous",
+    "next": "Next",
+    "refuse": "Refuse",
+    "apply": "Apply"
+  },
+  "status": {
+    "success": "Success",
+    "addSuccess": "Add Success",
+    "editSuccess": "Edit Success",
+    "delSuccess": "Delete Success",
+    "fail": "Fail",
+    "addFail": "Add Fail",
+    "editFail": "Edit Fail",
+    "delFail": "Delete Fail"
+  }
+}
