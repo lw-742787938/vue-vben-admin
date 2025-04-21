@@ -2,15 +2,15 @@
  * @Author: lw
  * @Date: 2025-03-11 11:25:52
  * @LastEditors: lw
- * @LastEditTime: 2025-03-21 10:44:52
+ * @LastEditTime: 2025-04-18 16:23:15
  * @Mailbox: 742787938@qq.com
- * @FilePath: \FeiFanHuiWu\apps\web-naive\src\bootstrap.ts
+ * @FilePath: \Cashier-Terminal-SAAS\apps\web-naive\src\bootstrap.ts
  * @Descripttion:
  */
 import { createApp, watchEffect } from 'vue';
 
 import { registerAccessDirective } from '@vben/access';
-import { initTippy, registerLoadingDirective } from '@vben/common-ui';
+import { initTippy, Page, registerLoadingDirective } from '@vben/common-ui';
 import { MotionPlugin } from '@vben/plugins/motion';
 import { preferences } from '@vben/preferences';
 import { initStores } from '@vben/stores';
@@ -26,7 +26,6 @@ import App from './app.vue';
 import customNavTitle from './components/custom-nav-title/index.vue';
 import { router } from './router';
 
-import './styles/index.scss';
 import './theme/index.scss';
 
 async function bootstrap(namespace: string) {
@@ -70,6 +69,7 @@ async function bootstrap(namespace: string) {
 
   // 组件注册
   app.component('custom-nav-title', customNavTitle);
+  app.component('Page', Page);
 
   // 动态更新标题
   watchEffect(() => {

@@ -1,3 +1,12 @@
+<!--
+ * @Author: lw
+ * @Date: 2025-04-18 11:29:11
+ * @LastEditors: lw
+ * @LastEditTime: 2025-04-21 18:03:15
+ * @Mailbox: 742787938@qq.com
+ * @FilePath: \Cashier-Terminal-SAAS\apps\web-naive\src\layouts\basic.vue
+ * @Descripttion: 
+-->
 <script lang="ts" setup>
 import type { NotificationItem } from '@vben/layouts';
 
@@ -14,6 +23,8 @@ import {
 import { preferences } from '@vben/preferences';
 import { useAccessStore, useUserStore } from '@vben/stores';
 
+import ChangeShifts from '#/components/change-shifts/index.vue';
+import QuickTool from '#/components/quick-tool/index.vue';
 import { useAuthStore } from '#/store';
 import LoginForm from '#/views/_core/authentication/login.vue';
 
@@ -121,6 +132,12 @@ watch(
     </template>
     <template #lock-screen>
       <LockScreen :avatar @to-login="handleLogout" />
+    </template>
+    <template #quick-tool>
+      <QuickTool />
+    </template>
+    <template #header-right-101>
+      <ChangeShifts />
     </template>
   </BasicLayout>
 </template>

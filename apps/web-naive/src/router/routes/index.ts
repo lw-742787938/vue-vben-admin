@@ -2,9 +2,9 @@
  * @Author: lw
  * @Date: 2025-03-11 11:25:52
  * @LastEditors: lw
- * @LastEditTime: 2025-04-08 16:59:42
+ * @LastEditTime: 2025-04-18 16:46:06
  * @Mailbox: 742787938@qq.com
- * @FilePath: \FeiFanHuiWu\apps\web-naive\src\router\routes\index.ts
+ * @FilePath: \Cashier-Terminal-SAAS\apps\web-naive\src\router\routes\index.ts
  * @Descripttion:
  */
 
@@ -20,15 +20,15 @@ const dynamicRouteFiles = import.meta.glob('./modules/**/*.ts', {
 
 // 有需要可以自行打开注释，并创建文件夹
 // const externalRouteFiles = import.meta.glob('./external/**/*.ts', { eager: true });
-// const staticRouteFiles = import.meta.glob('./static/**/*.ts', { eager: true });
+const staticRouteFiles = import.meta.glob('./static/**/*.ts', { eager: true });
 
 /** 动态路由 */
 const dynamicRoutes: RouteRecordRaw[] = mergeRouteModules(dynamicRouteFiles);
 
 /** 外部路由列表，访问这些页面可以不需要Layout，可能用于内嵌在别的系统(不会显示在菜单中) */
 // const externalRoutes: RouteRecordRaw[] = mergeRouteModules(externalRouteFiles);
-// const staticRoutes: RouteRecordRaw[] = mergeRouteModules(staticRouteFiles);
-const staticRoutes: RouteRecordRaw[] = [];
+const staticRoutes: RouteRecordRaw[] = mergeRouteModules(staticRouteFiles);
+// const staticRoutes: RouteRecordRaw[] = [];
 const externalRoutes: RouteRecordRaw[] = [];
 
 /** 路由列表，由基本路由、外部路由和404兜底路由组成

@@ -240,6 +240,9 @@ const headerSlots = computed(() => {
             :type="preferences.breadcrumb.styleType"
           />
         </template>
+        <template #quick-tool>
+          <slot name="quick-tool"></slot>
+        </template>
         <template v-if="showHeaderNav" #menu>
           <LayoutMenu
             :default-active="headerActive"

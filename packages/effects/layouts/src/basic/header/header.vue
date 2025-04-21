@@ -134,11 +134,17 @@ function clearPreferencesAndLogout() {
   >
     <slot :name="slot.name"></slot>
   </template>
-  <div
+  <!-- <div
     :class="`menu-align-${preferences.header.menuAlign}`"
     class="flex h-full min-w-0 flex-1 items-center"
   >
     <slot name="menu"></slot>
+  </div> -->
+  <div
+    :class="`menu-align-${preferences.header.menuAlign}`"
+    class="flex h-full min-w-0 flex-1 items-center"
+  >
+    <slot name="quick-tool"></slot>
   </div>
   <div class="flex h-full min-w-0 flex-shrink-0 items-center">
     <template v-for="slot in rightSlots" :key="slot.name">
