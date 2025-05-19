@@ -1,5 +1,14 @@
 /*
  * @Author: lw
+ * @Date: 2025-04-18 11:29:11
+ * @LastEditors: lw
+ * @LastEditTime: 2025-05-19 17:37:44
+ * @Mailbox: 742787938@qq.com
+ * @FilePath: \Cashier-Terminal-SAAS\apps\web-naive\src\store\auth.ts
+ * @Descripttion:
+ */
+/*
+ * @Author: lw
  * @Date: 2025-03-11 11:25:52
  * @LastEditors: lw
  * @LastEditTime: 2025-04-08 16:58:04

@@ -9,11 +9,11 @@ interface BasicUserInfo {
   /**
    * 用户id
    */
-  id: string;
+  id?: string;
   /**
    * 用户名
    */
-  loginName: string;
+  loginName?: string;
   /**
    * 头像
    */

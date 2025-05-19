@@ -1,48 +1,37 @@
-export const UrlToCode = (row: any) => {
-  const queryRow: any = {};
+export const UrlToCode = (row) => {
+  const queryRow = {};
   for (const key in row) {
     queryRow[key] = encodeURIComponent(row[key]);
   }
   return queryRow;
 };
-export const CodeToUrl = (row: any) => {
-  const queryRow: any = {};
+export const CodeToUrl = (row) => {
+  const queryRow = {};
   for (const key in row) {
     queryRow[key] = decodeURIComponent(row[key]);
   }
   return queryRow;
 };
 
-export const loadFile = async (fileName: string, url: string) => {
-  // try {
-  //   const response = await fetch(url);
-  //   if (!response.ok) {
-  //     throw new Error(`HTTP error! status: ${response.status}`);
-  //   }
-  //   const blob = await response.blob();
-  //   const file = new File([blob], fileName, { type: blob.type });
-  //   return file;
-  // } catch (error) {
-  //   console.error('Failed to load file:', error);
-  // }
+export const loadFile = async (fileName, url) => {
   try {
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const blob = await response.blob();
-    const file = new File([blob], fileName, { type: blob.type });
+    const file = new File([blob], fileName, { type: response.type });
     return file;
   } catch (error) {
     console.error('Failed to load file:', error);
   }
 };
 
-export const loadFileArray = (list: []) => {
-  return new Promise(async (resolve) => {
-    const arr: any[] = [];
+export const loadFileArray = (list) => {
+  return new Promise((resolve) => {
+    const arr = [];
     for (const item of list) {
-      await fetchData(item).then((res: any) => {
+      fetchData(item).then((res) => {
         arr.push(res);
       });
     }
@@ -50,10 +39,10 @@ export const loadFileArray = (list: []) => {
   });
 };
 
-const fetchData = async (item: any) => {
+const fetchData = async (item) => {
   try {
     // 使用 async/await 模拟同步调用
-    const response: Blob = await new Promise((resolve) => {
+    const response = await new Promise((resolve) => {
       fetch(item.url)
         .then((res) => res.blob())
         .then((data) => resolve(data));
