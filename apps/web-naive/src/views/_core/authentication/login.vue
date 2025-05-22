@@ -2,9 +2,9 @@
  * @Author: lw
  * @Date: 2025-03-11 11:25:52
  * @LastEditors: lw
- * @LastEditTime: 2025-03-27 11:18:06
+ * @LastEditTime: 2025-05-22 10:25:44
  * @Mailbox: 742787938@qq.com
- * @FilePath: \FeiFanHuiWu\apps\web-naive\src\views\_core\authentication\login.vue
+ * @FilePath: \Cashier-Terminal-SAAS\apps\web-naive\src\views\_core\authentication\login.vue
  * @Descripttion: 
 -->
 <script lang="ts" setup>
@@ -18,7 +18,7 @@ import { $t } from '@vben/locales';
 import { useAuthStore } from '#/store';
 
 defineOptions({ name: 'Login' });
-
+const VITE_APP_TITLE = import.meta.env.VITE_APP_TITLE;
 const authStore = useAuthStore();
 
 // const MOCK_USER_OPTIONS: BasicOption[] = [
@@ -80,7 +80,7 @@ const formSchema = computed((): VbenFormSchema[] => {
     // },
   ];
 });
-const title = '欢迎使用非凡会务';
+const title = `欢迎使用${VITE_APP_TITLE}`;
 </script>
 
 <template>
